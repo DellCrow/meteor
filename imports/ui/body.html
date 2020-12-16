@@ -1,0 +1,15 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Lista de Afazeres</h1>
+
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Adicione uma Tarefa" />
+      </form>
+    </header>
+
+    <ul>
+      {{#each tasks}} {{> task}} {{/each}}
+    </ul>
+  </div>
+</body>
